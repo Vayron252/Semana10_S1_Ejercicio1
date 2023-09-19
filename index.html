@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>SEMANA10</title>
+</head>
+<body class="bg-warning">
+    <div class="container mt-4 mb-4">
+        <h1 class="text-center mb-4 text-bg-dark rounded-2 p-3">Ejercicios Semana 10 - S1</h1>
+    
+        <!-- Preguntas -->
+        <div class="card rounded-2 p-3">
+            <div class="card-title">
+                <h2>1. Que es una funcion y para que sirve</h2>
+            </div>
+            <div class="card-body">
+                <p>Es un bloque de código que realiza una tarea específica</p>
+                <p>Sirve para encapsular código y reutilizarlo, así se hace menos codificación.</p>
+            </div>
+        </div>
+
+        <div class="card rounded-2 p-3 mt-3">
+            <div class="card-title">
+                <h2>2. Que es una funcion por declaracion y expresion y en que se diferencian</h2>
+            </div>
+            <div class="card-body">
+                <p>La función por declaracion es un encapsulamiento de código, existirá a lo largo de todo el código, sin importar el orden de donde está creado.</p>
+                <p>La función por expresión es un encapsulamiento de coódigo, que se guarda en una variable, para luego ser llamada, pero si y solo si, es despues de haberla creado.</p>
+                <p><b>Diferencias</b></p>
+                <li>Las declaraciones de funciones pueden ser ejecutadas antes de su definición.</li>
+                <li>Declaraciones a la derecha, expresiones a la izquierda.</li>
+                <li>Las expresiones son más difíciles de inspeccionar.</li>
+            </div>
+        </div>
+
+        <div class="card rounded-2 p-3 mt-3">
+            <div class="card-title">
+                <h2>3. Como crear , invocar, definir parametros y argumentos</h2>
+            </div>
+            <div class="card-body">
+                <h4>Ejemplo:</h4>
+                <p><b>Crear</b></p>
+                <p>function ConcatenarNombreApellido(nombre, apellido) { console.log(nombre + ' ' + apellido) }</p>
+                <i>Los que se encuentra dentro del parentesis, se le conoce como parámetro.</i>
+                <p class="mt-3"><b>Invocar, definir parametros y argumentos</b></p>
+                <p>ConcatenarNombreApellido('marco','alarcon');</p>
+                <i>Los string que se encuentran dentro la función invocada, se le conoce como argumentos.</i>
+            </div>
+        </div>
+
+        <div class="card rounded-2 p-3 mt-3">
+            <div class="card-title">
+                <h2>4. Coomo realizar comunicación entre funciones</h2>
+            </div>
+            <div class="card-body">
+                <h4>Ejemplo:</h4>
+                <p><b>Creamos la funcion Sumar y Restar</b></p>
+                <p>function sumar(n1,n2) { console.log(n1+n2) }</p>
+                <p>function restar(n1,n2) { console.log(n1-n2) }</p>
+                <p><b>Llamamos a las funciones dentro de otra funcion en base a alguna condicion</b></p>
+                <p> function operar( ) { </p>
+                <p>let numero1 = 10, numero2 = 5;</p>
+                <p>let operador = '+';</p>
+                <p>if(operador == '+'){</p>
+                <p>sumar(numero1,numero2);</p>
+                <p>}</p>
+                <p>else {</p>
+                <p>restar(numero1,numero2);</p>
+                <p>}</p>
+                <p>}</p>
+            </div>
+        </div>
+
+        <div class="card rounded-2 p-3 mt-3">
+            <div class="card-title">
+                <h2>5. Dar uso de arrow functions</h2>
+            </div>
+            <div class="card-body">
+                <p>Los arrow function simplifican la declaracion de una funcion.</p>
+                <h4>Ejemplo</h4>
+                <p>arreglo.forEach((valor)=>{console.log(valor);})</p>
+            </div>
+        </div>
+
+        <div class="card rounded-2 p-3 mt-3">
+            <div class="card-title">
+                <h2>6. Crear una funcion que me diga si el numero es par o impar.</h2>
+            </div>
+            <div class="card-body">
+                <input type="number" id="txtNumero" class="form-control w-25" placeholder="Ingrese Número">
+                <button class="btn btn-success mt-2" id="btnValidar">Validar Número</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
